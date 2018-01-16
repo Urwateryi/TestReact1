@@ -1,1 +1,4 @@
 *.pbxproj -text
+//将.h 和.m文件当作JavaScipt语言来统计
+*.h linguist-language=JavaScript
+*.m linguist-language=JavaScript
