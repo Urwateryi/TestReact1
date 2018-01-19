@@ -3,34 +3,28 @@
  * https://github.com/facebook/react-native
  * @flow
  */
-
-import React, {Component} from 'react';
+import React from 'react';
 import {
-    StyleSheet,
-    Text,
-    View
+    Navigator
 } from 'react-native';
-
-export default class HelloWorldApp extends Component {
+import FirstPageComponent from './js/mainpage';
+export default class SampleComponent extends React.Component {
     render() {
+        let defaultName = 'FirstPageComponent';
+        let defaultComponent = FirstPageComponent;
         return (
-            <View style={styles.container}>
-                <Text style={styles.welcome}>Hello yiyi!</Text>
-            </View>
+            <Navigator
+                initialRoute={{ name: defaultName, component: defaultComponent }}
+                configureScene={(route) => {
+                    return Navigator.SceneConfigs.HorizontalSwipeJumpFromRight;
+                }}
+                renderScene={(route, navigator) => {
+                    let Component = route.component;
+                    //这个语法是把 routes.params 里的每个key作为props的一个属性，在下个页面即可用this. props.id调用
+                    //navigator对象在导航容器跳转时一直存在
+                    return <Component {...route.params} navigator={navigator} />
+                }}
+            />
         );
     }
 }
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: '#ffffff',
-    }, welcome: {
-        fontSize: 30,
-        textAlign: 'center',
-        margin: 10,
-        color: '#333333',
-    }
-});
