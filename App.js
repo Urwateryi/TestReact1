@@ -1,30 +1,19 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
-import React from 'react';
-import {
-    Navigator
-} from 'react-native';
-import FirstPageComponent from './js/mainpage';
-export default class SampleComponent extends React.Component {
-    render() {
-        let defaultName = 'FirstPageComponent';
-        let defaultComponent = FirstPageComponent;
-        return (
-            <Navigator
-                initialRoute={{ name: defaultName, component: defaultComponent }}
-                configureScene={(route) => {
-                    return Navigator.SceneConfigs.HorizontalSwipeJumpFromRight;
-                }}
-                renderScene={(route, navigator) => {
-                    let Component = route.component;
-                    //这个语法是把 routes.params 里的每个key作为props的一个属性，在下个页面即可用this. props.id调用
-                    //navigator对象在导航容器跳转时一直存在
-                    return <Component {...route.params} navigator={navigator} />
-                }}
-            />
-        );
-    }
-}
+import { StackNavigator } from 'react-navigation';
+
+import HomePage from './js/HomePage';
+import FirstPage from './js/FirstPage'
+import SecondPage from './js/SecondPage'
+import ImageSource from './js/ImageSource'
+
+GLOBAL.afternoon = '中午好'; // 全局配置参数
+
+// 导航器、任务栈
+const BasicApp = StackNavigator({
+    // 所有页面，第一个优先显示
+    HomePage: { screen: HomePage },
+    FirstPage: { screen: FirstPage},
+    SecondPage:{ screen:SecondPage}
+});
+
+export default BasicApp;
+export {ImageSource}
