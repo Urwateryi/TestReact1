@@ -52,9 +52,9 @@ export default class HomePage extends Component {
                 <View style={{ height: 5 }} />
                 <Button
                     style ={styles.button}
-                    title="SecondPage"
+                    title="ThirdPage"
                     onPress={() => {
-                        navigate('SecondPage');
+                        navigate('ThirdPage');
                     }}
                 />
 

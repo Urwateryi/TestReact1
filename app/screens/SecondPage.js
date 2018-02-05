@@ -26,13 +26,13 @@ class IScrolledDownAndWhatHappenedNextShockedMe extends Component{
                 <Text style={{fontSize:96}}>Scroll me plz</Text>
                 <Image source={Images.home_navi.ic_create_normal} style={styles.pics}/>
                 <Text style={{fontSize:96}}>If you like</Text>
-                <Image source={Images.home_navi.ic_create_normal} style={styles.pics}/>
+                <Image source={Images.home_navi.ic_create_select} style={styles.pics}/>
                 <Text style={{fontSize:96}}>Scrolling down</Text>
-                <Image source={Images.home_navi.ic_create_normal} style={styles.pics}/>
+                <Image source={Images.home_navi.ic_info_normal} style={styles.pics}/>
                 <Text style={{fontSize:96}}>What's the best</Text>
-                <Image source={Images.home_navi.ic_create_normal} style={styles.pics}/>
+                <Image source={Images.home_navi.ic_msg_select} style={styles.pics}/>
                 <Text style={{fontSize:96}}>Framework around?</Text>
-                <Image source={Images.home_navi.ic_create_normal} style={styles.pics}/>
+                <Image source={Images.home_navi.ic_search_select} style={styles.pics}/>
                 <Text style={{fontSize:80}}>React Native</Text>
             </ScrollView>
         );
