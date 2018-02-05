@@ -1,7 +1,9 @@
 export default {
 
-    //导航
-    navi:{
+    //为了区分图片，此处按照不同的功能板块将图片分类
+
+    //首页底部导航图标
+    home_navi:{
         ic_create_normal:require('./imgs/create_normal.png'),
         ic_create_select:require('./imgs/create_select.png'),
 
