@@ -1,9 +1,9 @@
 import { StackNavigator } from 'react-navigation';
 
-import HomePage from './js/HomePage';
-import FirstPage from './js/FirstPage'
-import SecondPage from './js/SecondPage'
-import ImageSource from './js/ImageSource'
+import HomePage from './app/HomePage';
+import FirstPage from './app/screens/FirstPage'
+import SecondPage from './app/screens/SecondPage'
+// import Images from './app/resource/Images'
 
 GLOBAL.afternoon = '中午好'; // 全局配置参数
 
@@ -16,4 +16,4 @@ const BasicApp = StackNavigator({
 });
 
 export default BasicApp;
-export {ImageSource}
+// export {Images}

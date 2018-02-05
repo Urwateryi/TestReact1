@@ -3,8 +3,7 @@ import {
     StyleSheet,
     Text,
     Image,
-    View,
-    ScrollView
+    View
 } from 'react-native';
 
 export default class HelloWorldApp extends Component {

@@ -3,11 +3,11 @@ import {
     StyleSheet,
     Text,
     View,
-    Image,
+    // Image,
     ScrollView
 } from 'react-native';
 
-import {Images} from './js/ImageSource'
+// import Images from '../resource/Images'
 
 export default class HelloWorldApp extends Component {
     render() {
@@ -24,15 +24,15 @@ class IScrolledDownAndWhatHappenedNextShockedMe extends Component{
         return(
             <ScrollView>
                 <Text style={{fontSize:96}}>Scroll me plz</Text>
-                <Image source={ImageSource.navi.ic_create_normal}/>
+                {/*<Image source={Images.navi.ic_create_normal} style={styles.pics}/>*/}
                 <Text style={{fontSize:96}}>If you like</Text>
-                <Image source={ImageSource.navi.ic_create_normal}/>
+                {/*<Image source={Images.navi.ic_create_normal} style={styles.pics}/>*/}
                 <Text style={{fontSize:96}}>Scrolling down</Text>
-                <Image source={ImageSource.navi.ic_create_normal}/>
+                {/*<Image source={Images.navi.ic_create_normal} style={styles.pics}/>*/}
                 <Text style={{fontSize:96}}>What's the best</Text>
-                <Image source={ImageSource.navi.ic_create_normal}/>
+                {/*<Image source={Images.navi.ic_create_normal} style={styles.pics}/>*/}
                 <Text style={{fontSize:96}}>Framework around?</Text>
-                <Image source={ImageSource.navi.ic_create_normal}/>
+                {/*<Image source={Images.navi.ic_create_normal} style={styles.pics}/>*/}
                 <Text style={{fontSize:80}}>React Native</Text>
             </ScrollView>
         );
