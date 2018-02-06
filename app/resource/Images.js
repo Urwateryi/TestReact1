@@ -23,5 +23,9 @@ export default {
 
         ic_search_normal:require('./imgs/search_normal.png'),
         ic_search_select:require('./imgs/search_select.png')
+    },
+
+    whole_icon:{
+        ic_next:require('./imgs/ic_next.png')
     }
 }

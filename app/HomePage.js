@@ -17,27 +17,27 @@ export default class HomePage extends Component {
         return (
             <View style={styles.container}>
                 <View style={styles.nani}>
-                    <ImageButton style={styles.pic} source={Images.home_button.ic_info_select}
-                        onPress={()=>{
+                    <ImageButton style={styles.navigation} source={Images.home_button.ic_info_select}
+                                 onPress={()=>{
                             navigate('FirstPage');
                     }}/>
 
-                    <ImageButton style={styles.pic} source={Images.home_button.ic_search_select}
+                    <ImageButton style={styles.navigation} source={Images.home_button.ic_search_select}
                                  onPress={()=>{
                                      navigate('SecondPage');
                                  }}/>
 
-                    <ImageButton style={styles.pic} source={Images.home_button.ic_create_select}
+                    <ImageButton style={styles.navigation} source={Images.home_button.ic_create_select}
                                  onPress={()=>{
                                      navigate('ThirdPage');
                                  }}/>
 
-                    <ImageButton style={styles.pic} source={Images.home_button.ic_msg_select}
+                    <ImageButton style={styles.navigation} source={Images.home_button.ic_msg_select}
                                  onPress={()=>{
                                      navigate('FourPage');
                                  }}/>
 
-                    <ImageButton style={styles.pic} source={Images.home_button.ic_my_select}
+                    <ImageButton style={styles.navigation} source={Images.home_button.ic_my_select}
                                  onPress={()=>{
                                      navigate('FourPage');
                                  }}/>
@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
         justifyContent: 'space-around',//定制主轴
         alignItems: 'flex-end',//定制副轴
         marginBottom:10
-    },pic:{
+    },navigation:{
         width:40,
         height:40
     }
