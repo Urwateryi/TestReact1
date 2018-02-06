@@ -1,13 +1,14 @@
 /**
  * Description:图片按钮
  *
- * Author: zoey
+ * Author: zoe
  * Time: 2018/2/6 0006
  * E-mail: 807861340@qq.com
  */
 import React, {Component} from 'react';
 import {TouchableOpacity, Image} from 'react-native';
 
+//导出方式1：ES6 直接使用export default就可以导出了
 export default class ImageButton extends Component {
     render() {
         return (
@@ -44,5 +45,5 @@ export default class ImageButton extends Component {
     }
 }
 
-//导出
-module.exports=ImageButton;
+// //导出方式2：ES5
+// module.exports=ImageButton;

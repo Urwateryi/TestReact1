@@ -1,7 +1,7 @@
 /**
  * Description:第四页
  *
- * Author: zoey
+ * Author: zoe
  * Time: 2018/2/6 0006
  * E-mail: 807861340@qq.com
  */
@@ -31,11 +31,11 @@ export default class HelloWorldApp extends Component {
                 </View>
 
                 <View style={styles.nani}>
-                    <Image source={Images.home_navi.ic_info_select} style={styles.pics}/>
-                    <Image source={Images.home_navi.ic_search_select} style={styles.pics}/>
-                    <Image source={Images.home_navi.ic_create_select} style={styles.pics}/>
-                    <Image source={Images.home_navi.ic_msg_select} style={styles.pics}/>
-                    <Image source={Images.home_navi.ic_my_select} style={styles.pics}/>
+                    <Image source={Images.home_button.ic_info_select} style={styles.pics}/>
+                    <Image source={Images.home_button.ic_search_select} style={styles.pics}/>
+                    <Image source={Images.home_button.ic_create_select} style={styles.pics}/>
+                    <Image source={Images.home_button.ic_msg_select} style={styles.pics}/>
+                    <Image source={Images.home_button.ic_my_select} style={styles.pics}/>
                 </View>
             </View>
         );
