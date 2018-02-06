@@ -20,8 +20,8 @@ export default class HelloWorldApp extends Component {
         };
         return (
             <View style={styles.container}>
-                <Text style={styles.one}>Hello yiyi!</Text>
-                <Greeting name='zoey'/>
+                <Text style={styles.one}>Hello yi!</Text>
+                <Greeting name='zoe'/>
                 <FlexDirectionBasics/>
                 <JustifyContentBasics/>
                 <Image source={pic} style={styles.pics}/>
@@ -42,13 +42,13 @@ class FlexDirectionBasics extends Component {
         return (
             // 尝试把`flexDirection`改为`column`看看
             <View style={{flex: 1, flexDirection: 'row'}}>
-                <View style={{width: 50, height: 50, backgroundColor: 'powderblue'}} />
+                <View style={{width: 50, height: 50, backgroundColor: 'blue'}} />
                 <View style={{width: 50, height: 50, backgroundColor: 'skyblue'}} />
                 <View style={{width: 50, height: 50, backgroundColor: 'steelblue'}} />
             </View>
         );
     }
-};
+}
 
 
 class JustifyContentBasics extends Component {
@@ -67,7 +67,7 @@ class JustifyContentBasics extends Component {
             </View>
         );
     }
-};
+}
 
 const styles = StyleSheet.create({
     container: {

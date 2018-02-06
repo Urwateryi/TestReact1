@@ -5,7 +5,7 @@
  * Time: 2018/2/6 0006
  * E-mail: 807861340@qq.com
  */
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import {
     StyleSheet,
     Text,
@@ -26,21 +26,22 @@ export default class HelloWorldApp extends Component {
     }
 }
 
-class IScrolledDownAndWhatHappenedNextShockedMe extends Component{
+class IScrolledDownAndWhatHappenedNextShockedMe extends Component {
     render() {
-        return(
+        return (
             <ScrollView>
-                <Text style={{fontSize:96}}>Scroll me plz</Text>
+                <Text style={{fontSize: 96}}>Scroll me plz</Text>
                 <Image source={Images.home_button.ic_create_normal} style={styles.pics}/>
-                <Text style={{fontSize:96}}>If you like</Text>
+                <Text style={{fontSize: 96}}>If you like</Text>
                 <Image source={Images.home_button.ic_create_select} style={styles.pics}/>
-                <Text style={{fontSize:96}}>Scrolling down</Text>
+                <Text style={{fontSize: 96}}>Scrolling down</Text>
                 <Image source={Images.home_button.ic_info_normal} style={styles.pics}/>
-                <Text style={{fontSize:96}}>What's the best</Text>
+                <Text style={{fontSize: 96}}>What's the best</Text>
                 <Image source={Images.home_button.ic_msg_select} style={styles.pics}/>
-                <Text style={{fontSize:96}}>Framework around?</Text>
+                <Text style={{fontSize: 96}}>Framework around?</Text>
                 <Image source={Images.home_button.ic_search_select} style={styles.pics}/>
-                <Text style={{fontSize:80}}>React Native</Text>
+                <Text style={{fontSize: 80}}>React Native</Text>
+
             </ScrollView>
         );
     }

@@ -20,7 +20,7 @@ export default class HelloWorldApp extends Component {
             <View style={styles.container}>
                 <View style={styles.info}>
                     <Text style={styles.tag}>姓名</Text>
-                    <Text style={styles.content}>Zoey</Text>
+                    <Text style={styles.content}>Zoe</Text>
                 </View>
 
                 <Text style={styles.view}/>
