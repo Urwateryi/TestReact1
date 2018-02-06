@@ -4,8 +4,7 @@ import HomePage from './app/HomePage';
 import FirstPage from './app/screens/FirstPage'
 import SecondPage from './app/screens/SecondPage'
 import ThirdPage from './app/screens/ThirdPage'
-
-GLOBAL.afternoon = '中午好'; // 全局配置参数
+import FourPage from './app/screens/FourPage'
 
 // 导航器、任务栈
 const BasicApp = StackNavigator({
@@ -13,7 +12,8 @@ const BasicApp = StackNavigator({
     HomePage: { screen: HomePage },
     FirstPage: { screen: FirstPage},
     SecondPage:{ screen:SecondPage},
-    ThirdPage:{ screen:ThirdPage}
+    ThirdPage:{ screen:ThirdPage},
+    FourPage:{ screen:FourPage}
 });
 
 export default BasicApp;

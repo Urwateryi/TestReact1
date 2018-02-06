@@ -1,3 +1,10 @@
+/**
+ * Description:图片按钮
+ *
+ * Author: zoey
+ * Time: 2018/2/6 0006
+ * E-mail: 807861340@qq.com
+ */
 import React, {Component} from 'react';
 import {TouchableOpacity, Image} from 'react-native';
 
@@ -36,3 +43,6 @@ export default class ImageButton extends Component {
         }
     }
 }
+
+//导出
+module.exports=ImageButton;

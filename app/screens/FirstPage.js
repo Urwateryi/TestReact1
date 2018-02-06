@@ -1,3 +1,10 @@
+/**
+ * Description:第一页
+ *
+ * Author: zoey
+ * Time: 2018/2/6 0006
+ * E-mail: 807861340@qq.com
+ */
 import React, { Component } from 'react';
 import {
     StyleSheet,
@@ -13,7 +20,7 @@ export default class HelloWorldApp extends Component {
         };
         return (
             <View style={styles.container}>
-                <Text style={styles.welcome}>Hello yiyi!</Text>
+                <Text style={styles.one}>Hello yiyi!</Text>
                 <Greeting name='zoey'/>
                 <FlexDirectionBasics/>
                 <JustifyContentBasics/>
@@ -26,7 +33,7 @@ export default class HelloWorldApp extends Component {
 //ES6的写法
 class Greeting extends Component {
     render() {
-        return (<Text style={styles.welcome}>{this.props.name}</Text>);
+        return (<Text style={styles.one}>{this.props.name}</Text>);
     }
 }
 
@@ -68,7 +75,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         backgroundColor: '#ffffff',
-    }, welcome: {
+    }, one: {
         fontSize: 30,
         textAlign: 'center',
         color: '#333333',

@@ -1,7 +1,12 @@
+/**
+ * Description:图片管理类
+ * 为了区分图片，此处按照不同的功能板块将图片分类
+ *
+ * Author: zoey
+ * Time: 2018/2/6 0006
+ * E-mail: 807861340@qq.com
+ */
 export default {
-
-    //为了区分图片，此处按照不同的功能板块将图片分类
-
     //首页底部导航图标
     home_navi:{
         ic_create_normal:require('./imgs/create_normal.png'),

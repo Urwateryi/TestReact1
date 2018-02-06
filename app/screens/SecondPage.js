@@ -1,3 +1,10 @@
+/**
+ * Description:第二页
+ *
+ * Author: zoey
+ * Time: 2018/2/6 0006
+ * E-mail: 807861340@qq.com
+ */
 import React, { Component } from 'react';
 import {
     StyleSheet,
@@ -45,7 +52,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         backgroundColor: '#ffffff',
-    }, welcome: {
+    }, one: {
         fontSize: 30,
         textAlign: 'center',
         color: '#333333',
