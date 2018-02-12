@@ -27,5 +27,21 @@ export default {
 
     whole_icon:{
         ic_next:require('./imgs/ic_next.png')
+    },
+
+    test_ui_icon:{
+        ic_1:require('./imgs/ic_1.png'),
+        ic_2:require('./imgs/ic_2.png'),
+        ic_3:require('./imgs/ic_3.png'),
+        ic_4:require('./imgs/ic_4.png'),
+        ic_5:require('./imgs/ic_5.png'),
+        ic_6:require('./imgs/ic_6.png'),
+        ic_7:require('./imgs/ic_7.png'),
+        ic_8:require('./imgs/ic_8.png'),
+        ic_9:require('./imgs/ic_9.png'),
+        ic_10:require('./imgs/ic_10.png'),
+        ic_11:require('./imgs/ic_11.png'),
+        ic_12:require('./imgs/ic_12.png'),
+        ic_tag:require('./imgs/ic_tag.png'),
     }
 }

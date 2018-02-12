@@ -39,8 +39,9 @@ export default class HomePage extends Component {
 
                     <ImageButton style={styles.navigation} source={Images.home_button.ic_my_select}
                                  onPress={()=>{
-                                     navigate('FourPage');
-                                 }}/>
+                                     navigate('TestUI');
+                                 }}
+                                 />
                 </View>
             </View>
         );

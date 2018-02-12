@@ -22,7 +22,6 @@ export default class HelloWorldApp extends Component {
                     <Text style={styles.tag}>姓名</Text>
                     <Text style={styles.content}>Zoe</Text>
                 </View>
-
                 <View style={styles.info}>
                     <Text style={styles.tag}>家庭住址</Text>
                     <Text style={styles.content}>是否梵蒂冈梵蒂冈梵蒂冈的费否身份是否是否梵蒂冈梵蒂冈梵蒂冈的费否身份是否是否梵蒂冈梵蒂冈梵蒂冈的费否身份是否是否梵蒂冈梵蒂冈梵蒂冈的费否身份是否是否梵蒂冈梵蒂冈梵蒂冈的费否身份是否是否梵蒂冈梵蒂冈梵蒂冈的费否身份是否</Text>
