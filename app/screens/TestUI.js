@@ -10,43 +10,88 @@ import {
     StyleSheet,
     Text,
     Image,
+    TouchableOpacity,
+    TouchableWithoutFeedback,
+    TouchableHighlight,
+    TouchableNativeFeedback,
     View
 } from 'react-native';
 import {Images} from "../resource";
 
 export default class UIPage extends Component {
+    _onPressTouchableOpacity() {
+        alert("TouchableOpacity")
+    }
+
+    //TouchableWithoutFeedback的单击效果
+    _onPressTouchableWithoutFeedback() {
+        alert("TouchableWithoutFeedback")
+    }
+
+    //TouchableWithoutFeedback的长按效果
+    _onLongPressTouchableWithoutFeedback() {
+        alert("Long Press TouchableWithoutFeedback")
+    }
+
+    //为了支持Android5.0新增的触控反馈，React Native加入了TouchableNativeFeedback组件，TouchableNativeFeedback在TouchableWithoutFeedback所支持的属性的基础上增加了按下去的水波纹效果
+    _onPressTouchableNativeFeedback() {
+        alert("TouchableNativeFeedback")
+    }
+
     render() {
         return (
             <View style={styles.container}>
 
                 <View style={[styles.height160, styles.row, styles.border_buttom_1]}>
-                    <View style={[styles.flex1, styles.border_right_half_of_1, styles.justifyCenter]}>
+                    <TouchableOpacity activeOpacity={0.7}
+                                      style={[styles.flex1, styles.border_right_half_of_1, styles.justifyCenter]}
+                                      onPress={this._onPressTouchableOpacity}>
                         <Text style={styles.green14}>我们约会吧</Text>
                         <Text style={[styles.gray, styles.font11, styles.marginTop5]}>恋爱家人好朋友</Text>
                         <Image style={styles.ic_100} source={Images.test_ui_icon.ic_1}/>
-                    </View>
+                    </TouchableOpacity>
 
                     <View style={styles.flex2}>
-                        <View style={[styles.flex1, styles.row, styles.border_buttom_half_of_1]}>
-                            <View style={[styles.flex1, styles.justifyCenter]}>
-                                <Text style={[styles.red, styles.font14]}>超值低价 </Text>
-                                <Text style={[styles.gray, styles.font11, styles.marginTop5]}> 十元惠生活</Text>
+                        <TouchableWithoutFeedback onPress={this._onPressTouchableWithoutFeedback}
+                                                  onLongPress={this._onLongPressTouchableWithoutFeedback}>
+                            <View style={[styles.flex1, styles.row, styles.border_buttom_half_of_1]}>
+                                <View style={[styles.flex1, styles.justifyCenter]}>
+                                    <Text style={[styles.red, styles.font14]}>超值低价 </Text>
+                                    <Text style={[styles.gray, styles.font11, styles.marginTop5]}> 十元惠生活</Text>
+                                </View>
+                                <View style={[styles.flex1, styles.justifyCenter]}>
+                                    <Image style={styles.ic_60} source={Images.test_ui_icon.ic_2}/>
+                                </View>
                             </View>
-                            <View style={[styles.flex1, styles.justifyCenter]}>
-                                <Image style={styles.ic_60} source={Images.test_ui_icon.ic_2}/>
-                            </View>
-                        </View>
+                        </TouchableWithoutFeedback>
 
                         <View style={[styles.flex1, styles.row]}>
                             <View style={[styles.border_right_half_of_1, styles.flex1, styles.justifyCenter]}>
                                 <Text style={styles.green14}>聚餐宴请</Text>
                                 <Text style={[styles.gray, styles.font11, styles.marginTop5]}>朋友家人常聚餐</Text>
-                                <Image style={styles.ic_30} source={Images.test_ui_icon.ic_3}/>
+                                <TouchableHighlight
+                                    style={{marginTop: 20}}
+                                    activeOpacity={0.7}
+                                    underlayColor='green'
+                                    onHideUnderlay={() => {
+                                        this.setState({text: '衬底被隐藏'})
+                                    }}
+                                    onShowUnderlay={() => {
+                                        this.setState({text: '衬底显示'})
+                                    }}
+                                    onPress={() => {
+
+                                    }}
+                                >
+                                    <Image style={styles.ic_30} source={Images.test_ui_icon.ic_3}/>
+                                </TouchableHighlight>
                             </View>
                             <View style={[styles.part_2_right, styles.flex1, styles.justifyCenter]}>
                                 <Text style={styles.green14}>名店抢购</Text>
                                 <Text style={[styles.gray, styles.font11, styles.marginTop5]}>还有</Text>
+
                                 <Text style={styles.gray}>12:06:12分</Text>
+
                             </View>
                         </View>
                     </View>
@@ -56,12 +101,12 @@ export default class UIPage extends Component {
                     style={[styles.height160, styles.row, styles.marginTop10, styles.padding5, styles.border_buttom_1]}>
 
                     <View style={styles.flex1}>
-                        <View style={[styles.flex1,styles.light_gray, styles.justifyCenter]}>
+                        <View style={[styles.flex1, styles.light_gray, styles.justifyCenter]}>
                             <Text style={styles.green14}>红火来袭</Text>
                             <Text style={[styles.gray, styles.font11, styles.marginTop5]}>优雅吃小龙虾</Text>
                             <Image style={styles.ic_80} source={Images.test_ui_icon.ic_4}/>
                         </View>
-                        <Image style={[styles.ic_80,styles.frame_layout]} source={Images.test_ui_icon.ic_tag}/>
+                        <Image style={[styles.ic_80, styles.frame_layout]} source={Images.test_ui_icon.ic_tag}/>
                     </View>
                     <View style={[styles.flex1, styles.part_1_right, styles.marginLeft2]}>
                         <View style={[styles.flex1, styles.row, styles.light_gray]}>
@@ -79,7 +124,10 @@ export default class UIPage extends Component {
                                 <Text style={[styles.gray, styles.font11, styles.marginTop5]}> 端午出行攻略</Text>
                             </View>
                             <View style={[styles.flex1, styles.justifyCenter]}>
-                                <Image style={styles.ic_40} source={Images.test_ui_icon.ic_7}/>
+                                <TouchableNativeFeedback onPress={this._onPressTouchableNativeFeedback()}
+                                                         background={TouchableNativeFeedback.SelectableBackground()}>
+                                    <Image style={styles.ic_40} source={Images.test_ui_icon.ic_7}/>
+                                </TouchableNativeFeedback>
                             </View>
                         </View>
                     </View>
