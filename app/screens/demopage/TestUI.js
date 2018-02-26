@@ -16,7 +16,7 @@ import {
     TouchableNativeFeedback,
     View
 } from 'react-native';
-import {Images} from "../resource";
+import {Images} from "../../resource";
 
 export default class UIPage extends Component {
     _onPressTouchableOpacity() {

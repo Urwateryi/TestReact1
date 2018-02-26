@@ -2,23 +2,30 @@ import { StackNavigator } from 'react-navigation';
 
 // import HomePage from './app/IndexPage';
 import HomePage from './app/HomePage';
-import FirstPage from './app/screens/FirstPage'
-import SecondPage from './app/screens/SecondPage'
-import ThirdPage from './app/screens/ThirdPage'
-import FourPage from './app/screens/FourPage'
-import FivePage from "./app/screens/FivePage";
-import TestUI from "./app/screens/TestUI";
+import TextPage from './app/screens/demopage/TextPage'
+import SecondPage from './app/screens/demopage/SecondPage'
+import ThirdPage from './app/screens/demopage/ThirdPage'
+import FourPage from './app/screens/demopage/FourPage'
+import FivePage from "./app/screens/demopage/FivePage";
+import TestUI from "./app/screens/demopage/TestUI";
+
+import MainDemo from "./app/screens/demopage/MainDemo";
+import MainCreate from './app/screens/createpage/MainCreate'
+import MainFound from './app/screens/foundpage/MainFound'
+import MainMsg from './app/screens/msgpage/MainMsg'
+import MainMine from './app/screens/minepage/MainMine'
 
 // 导航器、任务栈
 const BasicApp = StackNavigator({
     // 所有页面，第一个优先显示
     HomePage: { screen: HomePage },
-    FirstPage: { screen: FirstPage},
+    TextPage: { screen: TextPage},
     SecondPage:{ screen:SecondPage},
     ThirdPage:{ screen:ThirdPage},
     FourPage:{ screen:FourPage},
     FivePage:{screen:FivePage},
-    TestUI:{screen:TestUI}
+
+
 });
 
 export default BasicApp;
