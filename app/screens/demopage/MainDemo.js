@@ -14,12 +14,6 @@ import {
     Text
 } from 'react-native';
 
-import TextPage from './TextPage'
-import SecondPage from './SecondPage'
-import ThirdPage from './ThirdPage'
-import FourPage from './FourPage'
-import FivePage from "./FivePage";
-
 var strList=[
     {
         key:'Text',

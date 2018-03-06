@@ -1,6 +1,5 @@
 import { StackNavigator } from 'react-navigation';
 
-// import HomePage from './app/IndexPage';
 import HomePage from './app/HomePage';
 import TextPage from './app/screens/demopage/TextPage'
 import SecondPage from './app/screens/demopage/SecondPage'
@@ -19,6 +18,11 @@ import MainMine from './app/screens/minepage/MainMine'
 const BasicApp = StackNavigator({
     // 所有页面，第一个优先显示
     HomePage: { screen: HomePage },
+    MainDemo:{screen:MainDemo},
+    MainCreate:{screen:MainCreate},
+    MainFound:{screen:MainFound},
+    MainMsg:{screen:MainMsg},
+    MainMine:{screen:MainMine},
     TextPage: { screen: TextPage},
     SecondPage:{ screen:SecondPage},
     ThirdPage:{ screen:ThirdPage},

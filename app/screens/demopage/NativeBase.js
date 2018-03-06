@@ -10,27 +10,20 @@ import {
     StyleSheet,
     View,
     Text,
-    Button
 } from 'react-native';
 
-import TextPage from '../demopage/TextPage'
+import {Container, StyleProvider, Text} from "native-base";
 
-export default class MainMsg extends Component {
+export default class NativeBaseTest extends Component {
     render() {
         return (
-            <View style={styles.container}>
-                <Text style={styles.text}>MainMsg</Text>
-                <PageTop/>
-            </View>
-        );
-    }
-}
+            <StyleProvider>
+                <Container>
+                    <Header>
 
-class PageTop extends Component {
-    render() {
-        const { navigate } = this.props.navigation;
-        return (
-            <Button title='TextPage' onPress={() => navigate.navigate('TextPage')}/>
+                    </Header>
+                </Container>
+            </StyleProvider>
         );
     }
 }
