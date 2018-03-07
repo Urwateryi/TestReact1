@@ -1,9 +1,5 @@
 /**
  * Description:引导页
- *
- * Author: zoe
- * Time: 2018/2/11 0011
- * E-mail: 807861340@qq.com
  */
 import React, {Component} from 'react';
 import {

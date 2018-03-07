@@ -1,10 +1,6 @@
 /**
  * Description:图片管理类
  * 为了区分图片，此处按照不同的功能板块将图片分类
- *
- * Author: zoe
- * Time: 2018/2/6 0006
- * E-mail: 807861340@qq.com
  */
 export default {
     //首页底部导航图标

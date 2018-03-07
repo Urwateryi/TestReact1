@@ -1,9 +1,5 @@
 /**
  * Description:
- *
- * Author: zoe
- * Time: 2018/2/12 0012
- * E-mail: 807861340@qq.com
  */
 import React, {Component} from 'React'
 import {

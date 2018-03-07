@@ -12,10 +12,6 @@ import MainMine from './screens/minepage/MainMine'
 
 /**
  * Description:首页
- *
- * Author: zoe
- * Time: 2018/2/6 0006
- * E-mail: 807861340@qq.com
  */
 export default class HomePage extends Component {
     constructor(props){
